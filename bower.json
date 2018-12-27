@@ -1,0 +1,31 @@
+{
+  "name": "2kgDesign",
+  "version": "0.8.8",
+  "homepage": "http://2kgDesign.com",
+  "authors": [
+    "Holger Koenemann <office@holgerkoenemann.de>"
+  ],
+  "description": "2kgDesign is a Bootstrap and underscores based WordPress theme framework.",
+  "moduleType": "globals",
+  "main": [
+    "sass/theme.scss"
+  ],
+  "keywords": [
+    "bootstrap",
+    "underscores",
+    "wordpress",
+    "_s",
+    "sass"
+  ],
+  "license": "GPL-2.0",
+  "ignore": [
+    "**/.*",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  },
+  "_source": "https://github.com/holger1411/2kgDesign.git",
+  "_target": "~0.8.8",
+  "_originalSource": "2kgDesign"
+}

@@ -1,0 +1,387 @@
+// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+
+// NAVIGATION
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-top: 60px;
+}
+@media (max-width: 979px) {
+  body {
+    padding-top: 0px;
+  }
+}
+
+body.admin-bar nav {
+  margin-top: 32px;
+}
+
+.custom-logo-link {
+  width: 150px;
+  padding: 0;
+}
+
+.bg-dark {
+  background-color: #000;
+}
+
+.active {
+  border-bottom: 2px solid $secondary;
+}
+
+
+// HERO SECTION
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .heading-logo {
+    max-width: 100%;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .heading-logo {
+    max-width: 70%;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .heading-logo {
+    max-width: 60%;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .heading-logo {
+    max-width: 50%;
+  }
+}
+
+.heading-logo {
+  width: 80%;
+}
+
+.jumbotron {
+  height: 85vh;
+  background-color: $grid-dark-bg-color;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23000000' fill-opacity='0.48' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.hero-content {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* # Custom lightbox */
+
+.modal-body {
+  padding: 0;
+}
+
+.modal-dialog {
+  top: 10%;
+  max-width: 70%;
+}
+
+.close {
+  font-size: 2rem;
+  opacity: unset;
+  color: #fff;
+  text-shadow: 0 1px 0 #fff;
+}
+
+.modal-header {
+  padding: 0;
+  border-bottom: none;
+}
+
+.modal-content {
+  background-color: unset;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .modal-dialog {
+    top: 25%;
+    max-width: 95%;
+  }
+}
+
+.iframe-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*--------------------------------------------------------------
+# SOCIAL MENU
+--------------------------------------------------------------*/
+.social {
+  position: absolute;
+  bottom: 15%;
+  text-align: center;
+  width: 100%;
+}
+
+.social a {
+  display: inline-block;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.social a i {
+  color: #fff;
+  font-size: 20px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  border: 2px solid #fff;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+}
+
+.social a i:hover {
+  color: $primary;
+  border-color: $secondary;
+  background: $secondary;
+}
+
+// about-section
+#about-section {
+  // background: $secondary;
+  background: $dark-section;
+}
+
+.blockquote-footer {
+  font-size: 1.2rem;
+}
+
+.about__image {
+  width: 100%;
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .about-text {
+    font-size: 1.1rem;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .about-text {
+    font-size: 1.8rem;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .about-text {
+    font-size: 2.2rem;
+  }
+  .about__image {
+    width: 80%;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .about-text {
+    font-size: 2.7rem;
+  }
+}
+
+// TEAM SECTION
+#team-section {
+  background-color: $primary;
+  // background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23000000' fill-opacity='0.48' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.card {
+  background-color: $black;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.team__member--name {
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin: 0;
+}
+.team__member--title {
+  // font-size: 1.5rem;
+}
+
+.social-team a {
+  display: inline-block;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.social-team a i {
+  color: $secondary;
+  font-size: 0.8rem;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  border: 2px solid $secondary;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+}
+
+.social-team a i:hover {
+  color: $black;
+  border-color: $light;
+  background: $light;
+}
+
+// BLOG SECTION
+
+#blog-section {
+  background-color: $dark;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23000000' fill-opacity='0.48' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.h-250 {
+  height: 250px;
+}
+@media (min-width: 768px) {
+  .h-md-250 {
+    height: 250px;
+  }
+}
+
+.card-img-right {
+  height: 100%;
+  border-radius: 0 3px 3px 0;
+}
+
+.flex-auto {
+  -ms-flex: 0 0 auto;
+  -webkit-box-flex: 0;
+  flex: 0 0 auto;
+}
+
+.blog__card--color {
+  background: $primary;
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .blog__card--text {
+    font-size: 0.9rem;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .blog__card--text {
+    font-size: 1rem;
+  }
+}
+
+// CONTACT SECTION
+
+.contact__left-side {
+  background: $primary;
+  // background: $dark-section;
+}
+
+.map-container-6 {
+  overflow: hidden;
+  // padding-bottom: 56.25%;
+  // position: relative;
+  height: 0;
+}
+.map-container-6 iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.wpcf7-textarea {
+  max-height: 5rem;
+}
+
+// ELEMENTS
+
+.btn {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+// Blog Index Page
+#index-wrapper {
+  background-color: $grid-dark-bg-color;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23000000' fill-opacity='0.48' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+// FOOTER
+
+.footer__text--heading {
+  font-size: 1.2rem;
+}
+#wrapper-footer {
+  background: $secondary;
+}
+
+.site-info,
+.site-info a,
+.office a {
+  color: $black-text;
+}
+
+.social-footer a {
+  display: inline-block;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.social-footer a i {
+  color: $black;
+  font-size: 20px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  border: 2px solid $black;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+}
+
+.social-footer a i:hover {
+  color: $light;
+  border-color: $black;
+  background: $black;
+}
