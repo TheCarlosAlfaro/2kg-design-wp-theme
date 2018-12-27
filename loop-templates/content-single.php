@@ -2,7 +2,7 @@
 /**
  * Single post partial template.
  *
- * @package 2kgDesign
+ * @package twoKgDesign
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -18,7 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 		<div class="entry-meta">
 
-			<?php 2kgDesign_posted_on(); ?>
+			<?php twoKgDesign_posted_on(); ?>
 
 		</div><!-- .entry-meta -->
 
@@ -32,7 +32,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 		<?php
 		wp_link_pages( array(
-			'before' => '<div class="page-links">' . __( 'Pages:', '2kgDesign' ),
+			'before' => '<div class="page-links">' . __( 'Pages:', 'twoKgDesign' ),
 			'after'  => '</div>',
 		) );
 		?>
@@ -41,7 +41,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	<footer class="entry-footer">
 
-		<?php 2kgDesign_entry_footer(); ?>
+		<?php twoKgDesign_entry_footer(); ?>
 
 	</footer><!-- .entry-footer -->
 

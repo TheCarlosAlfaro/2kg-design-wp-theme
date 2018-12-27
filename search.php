@@ -2,7 +2,7 @@
 /**
  * The template for displaying search results pages.
  *
- * @package 2kgDesign
+ * @package twoKgDesign
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -11,7 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header();
 
-$container   = get_theme_mod( '2kgDesign_container_type' );
+$container   = get_theme_mod( 'twoKgDesign_container_type' );
 
 ?>
 
@@ -32,7 +32,7 @@ $container   = get_theme_mod( '2kgDesign_container_type' );
 						
 							<h1 class="page-title"><?php printf(
 							/* translators:*/
-							 esc_html__( 'Search Results for: %s', '2kgDesign' ),
+							 esc_html__( 'Search Results for: %s', 'twoKgDesign' ),
 								'<span>' . get_search_query() . '</span>' ); ?></h1>
 
 					</header><!-- .page-header -->
@@ -60,7 +60,7 @@ $container   = get_theme_mod( '2kgDesign_container_type' );
 			</main><!-- #main -->
 
 			<!-- The pagination component -->
-			<?php 2kgDesign_pagination(); ?>
+			<?php twoKgDesign_pagination(); ?>
 
 		<!-- Do the right sidebar check -->
 		<?php get_template_part( 'global-templates/right-sidebar-check' ); ?>

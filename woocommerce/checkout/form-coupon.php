@@ -23,19 +23,19 @@ if ( ! wc_coupons_enabled() ) { // @codingStandardsIgnoreLine.
 
 ?>
 <div class="woocommerce-form-coupon-toggle">
-	<?php wc_print_notice( apply_filters( 'woocommerce_checkout_coupon_message', __( 'Have a coupon?', '2kgDesign' ) . ' <a href="#" class="showcoupon">' . __( 'Click here to enter your code', '2kgDesign' ) . '</a>' ), 'notice' ); ?>
+	<?php wc_print_notice( apply_filters( 'woocommerce_checkout_coupon_message', __( 'Have a coupon?', 'twoKgDesign' ) . ' <a href="#" class="showcoupon">' . __( 'Click here to enter your code', 'twoKgDesign' ) . '</a>' ), 'notice' ); ?>
 </div>
 
 <form class="checkout_coupon woocommerce-form-coupon" method="post" style="display:none">
 
-	<p><?php esc_html_e( 'If you have a coupon code, please apply it below.', '2kgDesign' ); ?></p>
+	<p><?php esc_html_e( 'If you have a coupon code, please apply it below.', 'twoKgDesign' ); ?></p>
 
 	<p class="form-row form-row-first">
-		<input type="text" name="coupon_code" class="form-control" placeholder="<?php esc_attr_e( 'Coupon code', '2kgDesign' ); ?>" id="coupon_code" value="" />
+		<input type="text" name="coupon_code" class="form-control" placeholder="<?php esc_attr_e( 'Coupon code', 'twoKgDesign' ); ?>" id="coupon_code" value="" />
 	</p>
 
 	<p class="form-row form-row-last">
-		<button type="submit" class="btn btn-outline-primary" name="apply_coupon" value="<?php esc_attr_e( 'Apply coupon', '2kgDesign' ); ?>"><?php esc_html_e( 'Apply coupon', '2kgDesign' ); ?></button>
+		<button type="submit" class="btn btn-outline-primary" name="apply_coupon" value="<?php esc_attr_e( 'Apply coupon', 'twoKgDesign' ); ?>"><?php esc_html_e( 'Apply coupon', 'twoKgDesign' ); ?></button>
 	</p>
 
 	<div class="clear"></div>

@@ -20,7 +20,7 @@ if (!defined('ABSPATH')) {
       <div class="col-sm mx-auto text-light">
   
         <blockquote class="blockquote">
-          <p class="font-italic about-text">"At 2kgDesign our priority is to work with integrity for an honest and escellent tax return. To Insure the financial freedom of you and your loved ones."<p>
+          <p class="font-italic about-text">"At twoKgDesign our priority is to work with integrity for an honest and escellent tax return. To Insure the financial freedom of you and your loved ones."<p>
           <footer class="blockquote-footer">Hector Gonzalez - <cite title=""><small>CEO & Founder</small></cite></footer>
         </blockquote>
       

@@ -5,14 +5,14 @@
  *
  * Contains the closing of the #content div and all content after
  *
- * @package 2kgDesign
+ * @package twoKgDesign
  */
 
 if (!defined('ABSPATH')) {
 	exit; // Exit if accessed directly.
 }
 
-$container = get_theme_mod('2kgDesign_container_type');
+$container = get_theme_mod('twoKgDesign_container_type');
 ?>
 
 <?php get_template_part('sidebar-templates/sidebar', 'footerfull'); ?>
@@ -60,7 +60,7 @@ $container = get_theme_mod('2kgDesign_container_type');
 						<div class="office text-center">
 							<p class="font-weight-bold footer__text--heading">CONTACT</p>
 							<p class="font-italic"><a href="tel:+702-822-6831"><i class="fa fa-phone"></i> (702)822-6831</a></p>
-							<p class="font-italic"><a href="mailto:info@2kgDesignlv.com"><i class="fa fa-envelope"></i> info@2kgDesignlv.com</a></p>
+							<p class="font-italic"><a href="mailto:info@twoKgDesignlv.com"><i class="fa fa-envelope"></i> info@twoKgDesignlv.com</a></p>
 						</div>
 					</div>
 					
@@ -68,8 +68,8 @@ $container = get_theme_mod('2kgDesign_container_type');
 					
 					<div class="site-info">
 						<div class="text-center">
-							<span>&copy; 2kgDesign 2019 All Rights Reserved. </span>
-							<!-- <?php 2kgDesign_site_info(); ?> -->
+							<span>&copy; twoKgDesign 2019 All Rights Reserved. </span>
+							<!-- <?php twoKgDesign_site_info(); ?> -->
 						</div>
 
 					</div><!-- .site-info -->

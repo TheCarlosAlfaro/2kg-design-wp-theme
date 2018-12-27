@@ -2,14 +2,14 @@
 /**
  * Sidebar setup for footer full.
  *
- * @package 2kgDesign
+ * @package twoKgDesign
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-$container = get_theme_mod( '2kgDesign_container_type' );
+$container = get_theme_mod( 'twoKgDesign_container_type' );
 
 ?>
 

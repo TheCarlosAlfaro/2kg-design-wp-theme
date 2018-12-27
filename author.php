@@ -4,7 +4,7 @@
  *
  * Learn more: https://codex.wordpress.org/Author_Templates
  *
- * @package 2kgDesign
+ * @package twoKgDesign
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 get_header();
-$container   = get_theme_mod( '2kgDesign_container_type' );
+$container   = get_theme_mod( 'twoKgDesign_container_type' );
 ?>
 
 
@@ -34,7 +34,7 @@ $container   = get_theme_mod( '2kgDesign_container_type' );
 						$author_name ) : get_userdata( intval( $author ) );
 					?>
 
-					<h1><?php esc_html_e( 'About:', '2kgDesign' ); ?><?php echo esc_html( $curauth->nickname ); ?></h1>
+					<h1><?php esc_html_e( 'About:', 'twoKgDesign' ); ?><?php echo esc_html( $curauth->nickname ); ?></h1>
 
 					<?php if ( ! empty( $curauth->ID ) ) : ?>
 						<?php echo get_avatar( $curauth->ID ); ?>
@@ -42,19 +42,19 @@ $container   = get_theme_mod( '2kgDesign_container_type' );
 
 					<dl>
 						<?php if ( ! empty( $curauth->user_url ) ) : ?>
-							<dt><?php esc_html_e( 'Website', '2kgDesign' ); ?></dt>
+							<dt><?php esc_html_e( 'Website', 'twoKgDesign' ); ?></dt>
 							<dd>
 								<a href="<?php echo esc_url( $curauth->user_url ); ?>"><?php echo esc_html( $curauth->user_url ); ?></a>
 							</dd>
 						<?php endif; ?>
 
 						<?php if ( ! empty( $curauth->user_description ) ) : ?>
-							<dt><?php esc_html_e( 'Profile', '2kgDesign' ); ?></dt>
+							<dt><?php esc_html_e( 'Profile', 'twoKgDesign' ); ?></dt>
 							<dd><?php echo esc_html( $curauth->user_description ); ?></dd>
 						<?php endif; ?>
 					</dl>
 
-					<h2><?php esc_html_e( 'Posts by', '2kgDesign' ); ?> <?php echo esc_html( $curauth->nickname ); ?>
+					<h2><?php esc_html_e( 'Posts by', 'twoKgDesign' ); ?> <?php echo esc_html( $curauth->nickname ); ?>
 						:</h2>
 
 				</header><!-- .page-header -->
@@ -66,10 +66,10 @@ $container   = get_theme_mod( '2kgDesign_container_type' );
 						<?php while ( have_posts() ) : the_post(); ?>
 							<li>
 								<a rel="bookmark" href="<?php the_permalink() ?>"
-								   title="<?php esc_html_e( 'Permanent Link:', '2kgDesign' ); ?> <?php the_title(); ?>">
+								   title="<?php esc_html_e( 'Permanent Link:', 'twoKgDesign' ); ?> <?php the_title(); ?>">
 									<?php the_title(); ?></a>,
-								<?php 2kgDesign_posted_on(); ?> <?php esc_html_e( 'in',
-								'2kgDesign' ); ?> <?php the_category( '&' ); ?>
+								<?php twoKgDesign_posted_on(); ?> <?php esc_html_e( 'in',
+								'twoKgDesign' ); ?> <?php the_category( '&' ); ?>
 							</li>
 						<?php endwhile; ?>
 
@@ -86,7 +86,7 @@ $container   = get_theme_mod( '2kgDesign_container_type' );
 			</main><!-- #main -->
 
 			<!-- The pagination component -->
-			<?php 2kgDesign_pagination(); ?>
+			<?php twoKgDesign_pagination(); ?>
 
 		<!-- Do the right sidebar check -->
 		<?php get_template_part( 'global-templates/right-sidebar-check' ); ?>

@@ -2,7 +2,7 @@
 /**
  * Content empty partial template.
  *
- * @package 2kgDesign
+ * @package twoKgDesign
  */
 
 if ( ! defined( 'ABSPATH' ) ) {

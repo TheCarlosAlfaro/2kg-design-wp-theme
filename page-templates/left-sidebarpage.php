@@ -4,7 +4,7 @@
  *
  * This template can be used to override the default template and sidebar setup
  *
- * @package 2kgDesign
+ * @package twoKgDesign
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 get_header();
-$container = get_theme_mod( '2kgDesign_container_type' );
+$container = get_theme_mod( 'twoKgDesign_container_type' );
 ?>
 
 <div class="wrapper" id="page-wrapper">

@@ -10,10 +10,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 $my_orders_columns = apply_filters( 'woocommerce_my_account_my_orders_columns', array(
-	'order-number'  => __( 'Order', '2kgDesign' ),
-	'order-date'    => __( 'Date', '2kgDesign' ),
-	'order-status'  => __( 'Status', '2kgDesign' ),
-	'order-total'   => __( 'Total', '2kgDesign' ),
+	'order-number'  => __( 'Order', 'twoKgDesign' ),
+	'order-date'    => __( 'Date', 'twoKgDesign' ),
+	'order-status'  => __( 'Status', 'twoKgDesign' ),
+	'order-total'   => __( 'Total', 'twoKgDesign' ),
 	'order-actions' => '&nbsp;',
 ) );
 
@@ -27,7 +27,7 @@ $customer_orders = get_posts( apply_filters( 'woocommerce_my_account_my_orders_q
 
 if ( $customer_orders ) : ?>
 
-	<h2><?php echo apply_filters( 'woocommerce_my_account_my_orders_title', __( 'Recent orders', '2kgDesign' ) ); ?></h2>
+	<h2><?php echo apply_filters( 'woocommerce_my_account_my_orders_title', __( 'Recent orders', 'twoKgDesign' ) ); ?></h2>
 
 	<table class="shop_table shop_table_responsive my_account_orders table-hover table-striped">
 
@@ -52,7 +52,7 @@ if ( $customer_orders ) : ?>
 
 							<?php elseif ( 'order-number' === $column_id ) : ?>
 								<a href="<?php echo esc_url( $order->get_view_order_url() ); ?>">
-									<?php echo _x( '#', 'hash before order number', '2kgDesign' ) . $order->get_order_number(); ?>
+									<?php echo _x( '#', 'hash before order number', 'twoKgDesign' ) . $order->get_order_number(); ?>
 								</a>
 
 							<?php elseif ( 'order-date' === $column_id ) : ?>
@@ -64,7 +64,7 @@ if ( $customer_orders ) : ?>
 							<?php elseif ( 'order-total' === $column_id ) : ?>
 								<?php
 								/* translators: 1: formatted order total 2: total order items */
-								printf( _n( '%1$s for %2$s item', '%1$s for %2$s items', $item_count, '2kgDesign' ), $order->get_formatted_order_total(), $item_count );
+								printf( _n( '%1$s for %2$s item', '%1$s for %2$s items', $item_count, 'twoKgDesign' ), $order->get_formatted_order_total(), $item_count );
 								?>
 
 							<?php elseif ( 'order-actions' === $column_id ) : ?>

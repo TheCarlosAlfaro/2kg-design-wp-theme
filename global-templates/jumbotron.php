@@ -19,7 +19,7 @@ if (!defined('ABSPATH')) {
     <div class="hero-content">
       
       <div>
-        <img src="http://tax-pro-lv.local/wp-content/uploads/2018/12/Logo-2kgDesign-Final-Corregido-Ingles.png" alt="" class="heading-logo mb-5">
+        <img src="http://tax-pro-lv.local/wp-content/uploads/2018/12/Logo-twoKgDesign-Final-Corregido-Ingles.png" alt="" class="heading-logo mb-5">
       </div>
       
       <!-- <h1 class="display-4">BUILD A HEALTHY CHURCH</h1>
@@ -53,10 +53,10 @@ if (!defined('ABSPATH')) {
       </div>
       
       <div class="social">
-        <a href="https://www.facebook.com/2kgDesignlv/" target="_blank">
+        <a href="https://www.facebook.com/twoKgDesignlv/" target="_blank">
         <i class="fa fa-facebook"></i>
       </a>
-      <a href="https://www.instagram.com/2kgDesignlv/" target="_blank">
+      <a href="https://www.instagram.com/twoKgDesignlv/" target="_blank">
       <i class="fa fa-instagram"></i>
     </a>
     <a href="https://www.youtube.com/watch?v=Hm6-AqhkCOU" target="_blank">

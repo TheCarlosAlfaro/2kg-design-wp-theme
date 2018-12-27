@@ -1,20 +1,20 @@
-Travis build: [![Build Status](https://travis-ci.org/2kgDesign/2kgDesign.svg?branch=master)](https://travis-ci.org/2kgDesign/2kgDesign)
+Travis build: [![Build Status](https://travis-ci.org/twoKgDesign/twoKgDesign.svg?branch=master)](https://travis-ci.org/twoKgDesign/twoKgDesign)
 
-#### See: [Official Demo](https://2kgDesign.com/2kgDesign) | Read: [Official Docs Page](https://2kgDesign.github.io/)
+#### See: [Official Demo](https://twoKgDesign.com/twoKgDesign) | Read: [Official Docs Page](https://twoKgDesign.github.io/)
 
-# 2kgDesign WordPress Theme Framework
+# twoKgDesign WordPress Theme Framework
 
-Website: [https://2kgDesign.com](https://2kgDesign.com)
+Website: [https://twoKgDesign.com](https://twoKgDesign.com)
 
-Child Theme Project: [https://github.com/2kgDesign/2kgDesign-child](https://github.com/2kgDesign/2kgDesign-child)
+Child Theme Project: [https://github.com/twoKgDesign/twoKgDesign-child](https://github.com/twoKgDesign/twoKgDesign-child)
 
 ## About
 
-I’m a huge fan of Underscores, Bootstrap, and Sass. Why not combine these into a solid WordPress Theme Framework? That’s what 2kgDesign is. You can use it as a starter theme and build your own theme on top of it. Or you can use it as a parent theme and create your own child theme for 2kgDesign.
+I’m a huge fan of Underscores, Bootstrap, and Sass. Why not combine these into a solid WordPress Theme Framework? That’s what twoKgDesign is. You can use it as a starter theme and build your own theme on top of it. Or you can use it as a parent theme and create your own child theme for twoKgDesign.
 
 ## License
-2kgDesign WordPress Theme, Copyright 2013-2018 Holger Koenemann
-2kgDesign is distributed under the terms of the GNU GPL version 2
+twoKgDesign WordPress Theme, Copyright 2013-2018 Holger Koenemann
+twoKgDesign is distributed under the terms of the GNU GPL version 2
 
 http://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
 
@@ -31,7 +31,7 @@ See [changelog](CHANGELOG.md)
 - Jetpack ready.
 - WooCommerce support.
 - Contact Form 7 support.
-- [Child Theme](https://github.com/holger1411/2kgDesign-child) ready.
+- [Child Theme](https://github.com/holger1411/twoKgDesign-child) ready.
 - Translation ready.
 
 ## Starter Theme + HTML Framework = WordPress Theme Framework
@@ -41,45 +41,45 @@ Why not add a well known and supported layout framework to have a solid, clean a
 
 ## Confused by All the CSS and Sass Files?
 
-Some basics about the Sass and CSS files that come with 2kgDesign:
+Some basics about the Sass and CSS files that come with twoKgDesign:
 - The theme itself uses the `/style.css`file only to identify the theme inside of WordPress. The file is not loaded by the theme and does not include any styles.
 - The `/css/theme.css` and its minified little brother `/css/theme.min.css` file(s) provides all styles. It is composed of five different SCSS sets and one variable file at `/sass/theme.scss`:
 
- ```@import "theme/theme_variables";  // 1. Add your variables into this file. Also add variables to overwrite Bootstrap or 2kgDesign variables here
+ ```@import "theme/theme_variables";  // 1. Add your variables into this file. Also add variables to overwrite Bootstrap or twoKgDesign variables here
  @import "../src/bootstrap-sass/assets/stylesheets/bootstrap";  // 2. All the Bootstrap stuff - Don´t edit this!
- @import "2kgDesign/2kgDesign"; // 3. Some basic WordPress stylings and needed styles to combine Boostrap and Underscores
+ @import "twoKgDesign/twoKgDesign"; // 3. Some basic WordPress stylings and needed styles to combine Boostrap and Underscores
  @import "../src/fontawesome/scss/font-awesome"; // 4. Font Awesome Icon styles
  // Any additional imported files //
  @import "theme/theme";  // 5. Add your styles into this file
  ```
 
-- Don’t edit the number 2-4 files/filesets listed above or you won’t be able to update 2kgDesign without overwriting your own work!
+- Don’t edit the number 2-4 files/filesets listed above or you won’t be able to update twoKgDesign without overwriting your own work!
 - Your design goes into: `/sass/theme`. 
   - Add your styles to the `/sass/theme/_theme.scss` file 
   - And your variables to the `/sass/theme/_theme_variables.scss`
   - Or add other .scss files into it and `@import` it into `/sass/theme/_theme.scss`.
 
 ## Installation
-There are several ways to install 2kgDesign. We'll look at three of them: (1) classic install by uploading 2kgDesign to a WordPress install, (2) using npm, and (3) using the theme directory in WordPress. 
+There are several ways to install twoKgDesign. We'll look at three of them: (1) classic install by uploading twoKgDesign to a WordPress install, (2) using npm, and (3) using the theme directory in WordPress. 
 
 ### Classic install
-- Download the 2kgDesign folder from GitHub or from [https://2kgDesign.com](https://2kgDesign.com)
-- IMPORTANT: If you download it from GitHub make sure you rename the "2kgDesign-master.zip" file just to "2kgDesign.zip" or you might have problems using child themes!
+- Download the twoKgDesign folder from GitHub or from [https://twoKgDesign.com](https://twoKgDesign.com)
+- IMPORTANT: If you download it from GitHub make sure you rename the "twoKgDesign-master.zip" file just to "twoKgDesign.zip" or you might have problems using child themes!
 - Upload it into your WordPress installation theme subfolder: `/wp-content/themes/`
 - Login to your WordPress backend
 - Go to Appearance → Themes
-- Activate the 2kgDesign theme
+- Activate the twoKgDesign theme
 
 ### npm install
 - Open your terminal
-- Change to the directory where you want to add 2kgDesign
-- Type `npm install 2kgDesign`
+- Change to the directory where you want to add twoKgDesign
+- Type `npm install twoKgDesign`
 
 ### WordPress.org install
 - Open your WordPress backend
 - Click on "Appearance -> Themes"
 - Hit the "Add new" button
-- Search for "2kgDesign"
+- Search for "twoKgDesign"
 - Hit the "install" button
 - Activate the theme
 
@@ -87,7 +87,7 @@ There are several ways to install 2kgDesign. We'll look at three of them: (1) cl
 
 ### Installing Dependencies
 - Make sure you have installed Node.js and Browser-Sync (optional) on your computer globally
-- Then open your terminal and browse to the location of your 2kgDesign copy
+- Then open your terminal and browse to the location of your twoKgDesign copy
 - Run: `$ npm install`
 
 ### Running
@@ -121,7 +121,7 @@ Add a new file to the themes root folder called rtl.css. Add all alignments to t
 https://codex.wordpress.org/Right_to_Left_Language_Support
 
 ## Page Templates
-2kgDesign includes several different page template files: (1) blank template, (2) empty template, and (3) full width template.
+twoKgDesign includes several different page template files: (1) blank template, (2) empty template, and (3) full width template.
 
 ### Blank Template
 

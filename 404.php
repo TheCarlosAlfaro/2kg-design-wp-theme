@@ -2,7 +2,7 @@
 /**
  * The template for displaying 404 pages (not found).
  *
- * @package 2kgDesign
+ * @package twoKgDesign
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -11,7 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header();
 
-$container   = get_theme_mod( '2kgDesign_container_type' );
+$container   = get_theme_mod( 'twoKgDesign_container_type' );
 ?>
 
 <div class="wrapper" id="error-404-wrapper">
@@ -29,24 +29,24 @@ $container   = get_theme_mod( '2kgDesign_container_type' );
 						<header class="page-header">
 
 							<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.',
-							'2kgDesign' ); ?></h1>
+							'twoKgDesign' ); ?></h1>
 
 						</header><!-- .page-header -->
 
 						<div class="page-content">
 
 							<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?',
-							'2kgDesign' ); ?></p>
+							'twoKgDesign' ); ?></p>
 
 							<?php get_search_form(); ?>
 
 							<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
 
-							<?php if ( 2kgDesign_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
+							<?php if ( twoKgDesign_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
 
 								<div class="widget widget_categories">
 
-									<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', '2kgDesign' ); ?></h2>
+									<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'twoKgDesign' ); ?></h2>
 
 									<ul>
 										<?php
@@ -67,7 +67,7 @@ $container   = get_theme_mod( '2kgDesign_container_type' );
 							<?php
 
 							/* translators: %1$s: smiley */
-							$archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', '2kgDesign' ), convert_smilies( ':)' ) ) . '</p>';
+							$archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'twoKgDesign' ), convert_smilies( ':)' ) ) . '</p>';
 							the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
 
 							the_widget( 'WP_Widget_Tag_Cloud' );

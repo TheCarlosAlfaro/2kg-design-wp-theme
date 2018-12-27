@@ -1,8 +1,8 @@
 <?php
 /**
- * 2kgDesign Theme Customizer
+ * twoKgDesign Theme Customizer
  *
- * @package 2kgDesign
+ * @package twoKgDesign
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -14,33 +14,33 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
-if ( ! function_exists( '2kgDesign_customize_register' ) ) {
+if ( ! function_exists( 'twoKgDesign_customize_register' ) ) {
 	/**
 	 * Register basic customizer support.
 	 *
 	 * @param object $wp_customize Customizer reference.
 	 */
-	function 2kgDesign_customize_register( $wp_customize ) {
+	function twoKgDesign_customize_register( $wp_customize ) {
 		$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 		$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 		$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
 	}
 }
-add_action( 'customize_register', '2kgDesign_customize_register' );
+add_action( 'customize_register', 'twoKgDesign_customize_register' );
 
-if ( ! function_exists( '2kgDesign_theme_customize_register' ) ) {
+if ( ! function_exists( 'twoKgDesign_theme_customize_register' ) ) {
 	/**
 	 * Register individual settings through customizer's API.
 	 *
 	 * @param WP_Customize_Manager $wp_customize Customizer reference.
 	 */
-	function 2kgDesign_theme_customize_register( $wp_customize ) {
+	function twoKgDesign_theme_customize_register( $wp_customize ) {
 
 		// Theme layout settings.
-		$wp_customize->add_section( '2kgDesign_theme_layout_options', array(
-			'title'       => __( 'Theme Layout Settings', '2kgDesign' ),
+		$wp_customize->add_section( 'twoKgDesign_theme_layout_options', array(
+			'title'       => __( 'Theme Layout Settings', 'twoKgDesign' ),
 			'capability'  => 'edit_theme_options',
-			'description' => __( 'Container width and sidebar defaults', '2kgDesign' ),
+			'description' => __( 'Container width and sidebar defaults', 'twoKgDesign' ),
 			'priority'    => 160,
 		) );
 
@@ -51,7 +51,7 @@ if ( ! function_exists( '2kgDesign_theme_customize_register' ) ) {
 		 * @param WP_Customize_Setting $setting Setting instance.
 		 * @return string Sanitized slug if it is a valid choice; otherwise, the setting default.
 		 */
-        	function 2kgDesign_theme_slug_sanitize_select( $input, $setting ){
+        	function twoKgDesign_theme_slug_sanitize_select( $input, $setting ){
 
             		// Ensure input is a slug (lowercase alphanumeric characters, dashes and underscores are allowed only).
             		$input = sanitize_key( $input );
@@ -64,31 +64,31 @@ if ( ! function_exists( '2kgDesign_theme_customize_register' ) ) {
 
         	}
 
-		$wp_customize->add_setting( '2kgDesign_container_type', array(
+		$wp_customize->add_setting( 'twoKgDesign_container_type', array(
 			'default'           => 'container',
 			'type'              => 'theme_mod',
-			'sanitize_callback' => '2kgDesign_theme_slug_sanitize_select',
+			'sanitize_callback' => 'twoKgDesign_theme_slug_sanitize_select',
 			'capability'        => 'edit_theme_options',
 		) );
 
 		$wp_customize->add_control(
 			new WP_Customize_Control(
 				$wp_customize,
-				'2kgDesign_container_type', array(
-					'label'       => __( 'Container Width', '2kgDesign' ),
-					'description' => __( 'Choose between Bootstrap\'s container and container-fluid', '2kgDesign' ),
-					'section'     => '2kgDesign_theme_layout_options',
-					'settings'    => '2kgDesign_container_type',
+				'twoKgDesign_container_type', array(
+					'label'       => __( 'Container Width', 'twoKgDesign' ),
+					'description' => __( 'Choose between Bootstrap\'s container and container-fluid', 'twoKgDesign' ),
+					'section'     => 'twoKgDesign_theme_layout_options',
+					'settings'    => 'twoKgDesign_container_type',
 					'type'        => 'select',
 					'choices'     => array(
-						'container'       => __( 'Fixed width container', '2kgDesign' ),
-						'container-fluid' => __( 'Full width container', '2kgDesign' ),
+						'container'       => __( 'Fixed width container', 'twoKgDesign' ),
+						'container-fluid' => __( 'Full width container', 'twoKgDesign' ),
 					),
 					'priority'    => '10',
 				)
 			) );
 
-		$wp_customize->add_setting( '2kgDesign_sidebar_position', array(
+		$wp_customize->add_setting( 'twoKgDesign_sidebar_position', array(
 			'default'           => 'right',
 			'type'              => 'theme_mod',
 			'sanitize_callback' => 'sanitize_text_field',
@@ -98,38 +98,38 @@ if ( ! function_exists( '2kgDesign_theme_customize_register' ) ) {
 		$wp_customize->add_control(
 			new WP_Customize_Control(
 				$wp_customize,
-				'2kgDesign_sidebar_position', array(
-					'label'       => __( 'Sidebar Positioning', '2kgDesign' ),
+				'twoKgDesign_sidebar_position', array(
+					'label'       => __( 'Sidebar Positioning', 'twoKgDesign' ),
 					'description' => __( 'Set sidebar\'s default position. Can either be: right, left, both or none. Note: this can be overridden on individual pages.',
-					'2kgDesign' ),
-					'section'     => '2kgDesign_theme_layout_options',
-					'settings'    => '2kgDesign_sidebar_position',
+					'twoKgDesign' ),
+					'section'     => 'twoKgDesign_theme_layout_options',
+					'settings'    => 'twoKgDesign_sidebar_position',
 					'type'        => 'select',
-					'sanitize_callback' => '2kgDesign_theme_slug_sanitize_select',
+					'sanitize_callback' => 'twoKgDesign_theme_slug_sanitize_select',
 					'choices'     => array(
-						'right' => __( 'Right sidebar', '2kgDesign' ),
-						'left'  => __( 'Left sidebar', '2kgDesign' ),
-						'both'  => __( 'Left & Right sidebars', '2kgDesign' ),
-						'none'  => __( 'No sidebar', '2kgDesign' ),
+						'right' => __( 'Right sidebar', 'twoKgDesign' ),
+						'left'  => __( 'Left sidebar', 'twoKgDesign' ),
+						'both'  => __( 'Left & Right sidebars', 'twoKgDesign' ),
+						'none'  => __( 'No sidebar', 'twoKgDesign' ),
 					),
 					'priority'    => '20',
 				)
 			) );
 	}
-} // endif function_exists( '2kgDesign_theme_customize_register' ).
-add_action( 'customize_register', '2kgDesign_theme_customize_register' );
+} // endif function_exists( 'twoKgDesign_theme_customize_register' ).
+add_action( 'customize_register', 'twoKgDesign_theme_customize_register' );
 
 /**
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
-if ( ! function_exists( '2kgDesign_customize_preview_js' ) ) {
+if ( ! function_exists( 'twoKgDesign_customize_preview_js' ) ) {
 	/**
 	 * Setup JS integration for live previewing.
 	 */
-	function 2kgDesign_customize_preview_js() {
-		wp_enqueue_script( '2kgDesign_customizer', get_template_directory_uri() . '/js/customizer.js',
+	function twoKgDesign_customize_preview_js() {
+		wp_enqueue_script( 'twoKgDesign_customizer', get_template_directory_uri() . '/js/customizer.js',
 			array( 'customize-preview' ), '20130508', true
 		);
 	}
 }
-add_action( 'customize_preview_init', '2kgDesign_customize_preview_js' );
+add_action( 'customize_preview_init', 'twoKgDesign_customize_preview_js' );

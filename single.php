@@ -2,7 +2,7 @@
 /**
  * The template for displaying all single posts.
  *
- * @package 2kgDesign
+ * @package twoKgDesign
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -10,7 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 get_header();
-$container   = get_theme_mod( '2kgDesign_container_type' );
+$container   = get_theme_mod( 'twoKgDesign_container_type' );
 ?>
 
 <div class="wrapper" id="single-wrapper">
@@ -28,7 +28,7 @@ $container   = get_theme_mod( '2kgDesign_container_type' );
 
 					<?php get_template_part( 'loop-templates/content', 'single' ); ?>
 
-						<?php 2kgDesign_post_nav(); ?>
+						<?php twoKgDesign_post_nav(); ?>
 
 					
 

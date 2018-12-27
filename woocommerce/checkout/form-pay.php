@@ -24,9 +24,9 @@ $totals = $order->get_order_item_totals();
 	<table class="shop_table">
 		<thead>
 			<tr>
-				<th class="product-name"><?php esc_html_e( 'Product', '2kgDesign' ); ?></th>
-				<th class="product-quantity"><?php esc_html_e( 'Qty', '2kgDesign' ); ?></th>
-				<th class="product-total"><?php esc_html_e( 'Totals', '2kgDesign' ); ?></th>
+				<th class="product-name"><?php esc_html_e( 'Product', 'twoKgDesign' ); ?></th>
+				<th class="product-quantity"><?php esc_html_e( 'Qty', 'twoKgDesign' ); ?></th>
+				<th class="product-total"><?php esc_html_e( 'Totals', 'twoKgDesign' ); ?></th>
 			</tr>
 		</thead>
 		<tbody>
@@ -76,7 +76,7 @@ $totals = $order->get_order_item_totals();
 						wc_get_template( 'checkout/payment-method.php', array( 'gateway' => $gateway ) );
 					}
 				} else {
-					echo '<li class="woocommerce-notice woocommerce-notice--info woocommerce-info">' . apply_filters( 'woocommerce_no_available_payment_methods_message', __( 'Sorry, it seems that there are no available payment methods for your location. Please contact us if you require assistance or wish to make alternate arrangements.', '2kgDesign' ) ) . '</li>'; // @codingStandardsIgnoreLine
+					echo '<li class="woocommerce-notice woocommerce-notice--info woocommerce-info">' . apply_filters( 'woocommerce_no_available_payment_methods_message', __( 'Sorry, it seems that there are no available payment methods for your location. Please contact us if you require assistance or wish to make alternate arrangements.', 'twoKgDesign' ) ) . '</li>'; // @codingStandardsIgnoreLine
 				}
 				?>
 			</ul>

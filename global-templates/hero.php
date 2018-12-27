@@ -2,7 +2,7 @@
 /**
  * Hero setup.
  *
- * @package 2kgDesign
+ * @package twoKgDesign
  */
 
 if ( ! defined( 'ABSPATH' ) ) {

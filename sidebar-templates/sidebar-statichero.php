@@ -2,10 +2,10 @@
 /**
  * Static hero sidebar setup.
  *
- * @package 2kgDesign
+ * @package twoKgDesign
  */
 
-$container = get_theme_mod( '2kgDesign_container_type' );
+$container = get_theme_mod( 'twoKgDesign_container_type' );
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }

@@ -2,7 +2,7 @@
 /**
  * Sidebar - hero setup.
  *
- * @package 2kgDesign
+ * @package twoKgDesign
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -26,7 +26,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			    
 			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
 			    
-			    <span class="sr-only"><?php esc_html_e( 'Previous', '2kgDesign' ); ?></span>
+			    <span class="sr-only"><?php esc_html_e( 'Previous', 'twoKgDesign' ); ?></span>
 			 
 			 </a>
 			 
@@ -34,7 +34,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			    
 			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
 			    
-			    <span class="sr-only"><?php esc_html_e( 'Next', '2kgDesign' ); ?></span>
+			    <span class="sr-only"><?php esc_html_e( 'Next', 'twoKgDesign' ); ?></span>
 			  
 			</a>
 

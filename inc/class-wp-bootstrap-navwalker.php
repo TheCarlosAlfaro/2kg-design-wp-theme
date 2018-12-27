@@ -24,13 +24,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 */
 
 /* Check if Class Exists. */
-if ( ! class_exists( '2kgDesign_WP_Bootstrap_Navwalker' ) ) {
+if ( ! class_exists( 'twoKgDesign_WP_Bootstrap_Navwalker' ) ) {
 	/**
 	 * WP_Bootstrap_Navwalker class.
 	 *
 	 * @extends Walker_Nav_Menu
 	 */
-	class 2kgDesign_WP_Bootstrap_Navwalker extends Walker_Nav_Menu {
+	class twoKgDesign_WP_Bootstrap_Navwalker extends Walker_Nav_Menu {
 
 		/**
 		 * Starts the list before the elements are added.
@@ -367,7 +367,7 @@ if ( ! class_exists( '2kgDesign_WP_Bootstrap_Navwalker' ) ) {
 				if ( $menu_class ) {
 					$fallback_output .= ' class="' . esc_attr( $menu_class ) . '"'; }
 				$fallback_output .= '>';
-				$fallback_output .= '<li><a href="' . esc_url( admin_url( 'nav-menus.php' ) ) . '" title="' . esc_attr__( 'Add a menu', '2kgDesign' ) . '">' . esc_html__( 'Add a menu', '2kgDesign' ) . '</a></li>';
+				$fallback_output .= '<li><a href="' . esc_url( admin_url( 'nav-menus.php' ) ) . '" title="' . esc_attr__( 'Add a menu', 'twoKgDesign' ) . '">' . esc_html__( 'Add a menu', 'twoKgDesign' ) . '</a></li>';
 				$fallback_output .= '</ul>';
 				if ( $container ) {
 					$fallback_output .= '</' . esc_attr( $container ) . '>';

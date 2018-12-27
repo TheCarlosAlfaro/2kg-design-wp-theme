@@ -4,7 +4,7 @@
  *
  * This file is centrally included from `wp-content/mu-plugins/wpcom-theme-compat.php`.
  *
- * @package 2kgDesign
+ * @package twoKgDesign
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -16,10 +16,10 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @global array $themecolors
  */
-add_action( 'after_setup_theme', '2kgDesign_wpcom_setup' );
+add_action( 'after_setup_theme', 'twoKgDesign_wpcom_setup' );
 
-if ( ! function_exists ( '2kgDesign_wpcom_setup' ) ) {
-	function 2kgDesign_wpcom_setup() {
+if ( ! function_exists ( 'twoKgDesign_wpcom_setup' ) ) {
+	function twoKgDesign_wpcom_setup() {
 		global $themecolors;
 
 		// Set theme colors for third party services.
@@ -42,10 +42,10 @@ if ( ! function_exists ( '2kgDesign_wpcom_setup' ) ) {
 /*
  * WordPress.com-specific styles
  */
-add_action( 'wp_enqueue_scripts', '2kgDesign_wpcom_styles' );
+add_action( 'wp_enqueue_scripts', 'twoKgDesign_wpcom_styles' );
 
-if ( ! function_exists ( '2kgDesign_wpcom_styles' ) ) {
-	function 2kgDesign_wpcom_styles() {
-		wp_enqueue_style( '2kgDesign-wpcom', get_template_directory_uri() . '/inc/style-wpcom.css', array(), '20160411' );
+if ( ! function_exists ( 'twoKgDesign_wpcom_styles' ) ) {
+	function twoKgDesign_wpcom_styles() {
+		wp_enqueue_style( 'twoKgDesign-wpcom', get_template_directory_uri() . '/inc/style-wpcom.css', array(), '20160411' );
 	}
 }

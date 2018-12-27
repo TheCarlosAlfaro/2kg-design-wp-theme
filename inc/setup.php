@@ -2,7 +2,7 @@
 /**
  * Theme basic setup.
  *
- * @package 2kgDesign
+ * @package twoKgDesign
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -14,9 +14,9 @@ if ( ! isset( $content_width ) ) {
 	$content_width = 640; /* pixels */
 }
 
-add_action( 'after_setup_theme', '2kgDesign_setup' );
+add_action( 'after_setup_theme', 'twoKgDesign_setup' );
 
-if ( ! function_exists ( '2kgDesign_setup' ) ) {
+if ( ! function_exists ( 'twoKgDesign_setup' ) ) {
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
@@ -24,14 +24,14 @@ if ( ! function_exists ( '2kgDesign_setup' ) ) {
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 */
-	function 2kgDesign_setup() {
+	function twoKgDesign_setup() {
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
-		 * If you're building a theme based on 2kgDesign, use a find and replace
-		 * to change '2kgDesign' to the name of your theme in all the template files
+		 * If you're building a theme based on twoKgDesign, use a find and replace
+		 * to change 'twoKgDesign' to the name of your theme in all the template files
 		 */
-		load_theme_textdomain( '2kgDesign', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'twoKgDesign', get_template_directory() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -46,7 +46,7 @@ if ( ! function_exists ( '2kgDesign_setup' ) ) {
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'primary' => __( 'Primary Menu', '2kgDesign' ),
+			'primary' => __( 'Primary Menu', 'twoKgDesign' ),
 		) );
 
 		/*
@@ -84,7 +84,7 @@ if ( ! function_exists ( '2kgDesign_setup' ) ) {
 		) );
 
 		// Set up the WordPress core custom background feature.
-		add_theme_support( 'custom-background', apply_filters( '2kgDesign_custom_background_args', array(
+		add_theme_support( 'custom-background', apply_filters( 'twoKgDesign_custom_background_args', array(
 			'default-color' => 'ffffff',
 			'default-image' => '',
 		) ) );
@@ -93,15 +93,15 @@ if ( ! function_exists ( '2kgDesign_setup' ) ) {
 		add_theme_support( 'custom-logo' );
 
 		// Check and setup theme default settings.
-		2kgDesign_setup_theme_default_settings();
+		twoKgDesign_setup_theme_default_settings();
 
 	}
 }
 
 
-add_filter( 'excerpt_more', '2kgDesign_custom_excerpt_more' );
+add_filter( 'excerpt_more', 'twoKgDesign_custom_excerpt_more' );
 
-if ( ! function_exists( '2kgDesign_custom_excerpt_more' ) ) {
+if ( ! function_exists( 'twoKgDesign_custom_excerpt_more' ) ) {
 	/**
 	 * Removes the ... from the excerpt read more link
 	 *
@@ -109,7 +109,7 @@ if ( ! function_exists( '2kgDesign_custom_excerpt_more' ) ) {
 	 *
 	 * @return string
 	 */
-	function 2kgDesign_custom_excerpt_more( $more ) {
+	function twoKgDesign_custom_excerpt_more( $more ) {
 		if ( ! is_admin() ) {
 			$more = '';
 		}
@@ -117,9 +117,9 @@ if ( ! function_exists( '2kgDesign_custom_excerpt_more' ) ) {
 	}
 }
 
-add_filter( 'wp_trim_excerpt', '2kgDesign_all_excerpts_get_more_link' );
+add_filter( 'wp_trim_excerpt', 'twoKgDesign_all_excerpts_get_more_link' );
 
-if ( ! function_exists( '2kgDesign_all_excerpts_get_more_link' ) ) {
+if ( ! function_exists( 'twoKgDesign_all_excerpts_get_more_link' ) ) {
 	/**
 	 * Adds a custom read more link to all excerpts, manually or automatically generated
 	 *
@@ -127,10 +127,10 @@ if ( ! function_exists( '2kgDesign_all_excerpts_get_more_link' ) ) {
 	 *
 	 * @return string
 	 */
-	function 2kgDesign_all_excerpts_get_more_link( $post_excerpt ) {
+	function twoKgDesign_all_excerpts_get_more_link( $post_excerpt ) {
 		if ( ! is_admin() ) {
-			$post_excerpt = $post_excerpt . ' [...]<p><a class="btn btn-secondary 2kgDesign-read-more-link" href="' . esc_url( get_permalink( get_the_ID() ) ) . '">' . __( 'Read More...',
-			'2kgDesign' ) . '</a></p>';
+			$post_excerpt = $post_excerpt . ' [...]<p><a class="btn btn-secondary twoKgDesign-read-more-link" href="' . esc_url( get_permalink( get_the_ID() ) ) . '">' . __( 'Read More...',
+			'twoKgDesign' ) . '</a></p>';
 		}
 		return $post_excerpt;
 	}

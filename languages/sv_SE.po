@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: 2kgDesign\n"
+"Project-Id-Version: twoKgDesign\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/theme/_s\n"
 "POT-Creation-Date: 2016-11-23 20:21+0200\n"
 "PO-Revision-Date: 2017-02-20 13:19+0000\n"
@@ -371,12 +371,12 @@ msgid "Save changes"
 msgstr "Spara ändringar"
 
 #. Name of the theme
-msgid "2kgDesign"
-msgstr "2kgDesign"
+msgid "twoKgDesign"
+msgstr "twoKgDesign"
 
 #. Theme URI of the theme
-msgid "http://2kgDesign.com"
-msgstr "http://2kgDesign.com"
+msgid "http://twoKgDesign.com"
+msgstr "http://twoKgDesign.com"
 
 #. Description of the theme
 msgid ""

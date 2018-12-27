@@ -2,22 +2,22 @@
 /**
  * Custom header setup.
  *
- * @package 2kgDesign
+ * @package twoKgDesign
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-add_action( 'after_setup_theme', '2kgDesign_custom_header_setup' );
+add_action( 'after_setup_theme', 'twoKgDesign_custom_header_setup' );
 
-if ( ! function_exists ( '2kgDesign_custom_header_setup' ) ) {
-	function 2kgDesign_custom_header_setup() {
+if ( ! function_exists ( 'twoKgDesign_custom_header_setup' ) ) {
+	function twoKgDesign_custom_header_setup() {
 
 		/**
-		 * Filter 2kgDesign custom-header support arguments.
+		 * Filter twoKgDesign custom-header support arguments.
 		 *
-		 * @since 2kgDesign 0.5.2
+		 * @since twoKgDesign 0.5.2
 		 *
 		 * @param array $args {
 		 *     An array of custom-header support arguments.
@@ -31,7 +31,7 @@ if ( ! function_exists ( '2kgDesign_custom_header_setup' ) ) {
 		 *     @type string $flex-height     		Flex support for height of header.
 		 * }
 		 */
-		add_theme_support( 'custom-header', apply_filters( '2kgDesign_custom_header_args', array(
+		add_theme_support( 'custom-header', apply_filters( 'twoKgDesign_custom_header_args', array(
 			'default-image'      => get_parent_theme_file_uri( '/img/header.jpg' ),
 			'width'              => 2000,
 			'height'             => 1200,
@@ -42,7 +42,7 @@ if ( ! function_exists ( '2kgDesign_custom_header_setup' ) ) {
 			'default-image' => array(
 				'url'           => '%s/img/header.jpg',
 				'thumbnail_url' => '%s/img/header.jpg',
-				'description'   => __( 'Default Header Image', '2kgDesign' ),
+				'description'   => __( 'Default Header Image', 'twoKgDesign' ),
 			),
 		) );
 	}

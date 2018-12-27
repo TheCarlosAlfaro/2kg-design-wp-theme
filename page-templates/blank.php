@@ -4,7 +4,7 @@
  *
  * Template for displaying a blank page.
  *
- * @package 2kgDesign
+ * @package twoKgDesign
  */
 
 if ( ! defined( 'ABSPATH' ) ) {

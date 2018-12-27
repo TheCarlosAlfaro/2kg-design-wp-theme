@@ -137,7 +137,7 @@
               - Update prefixes
               - Remove automatically db updates by theme
               - Rename and streamline functions
-              - Changing WooCommerce text domain to "2kgDesign"
+              - Changing WooCommerce text domain to "twoKgDesign"
               - Disable theme-settings.php call
               - Remove jQuery 3.2.1 slim and switch back to WP core jQuery version
               - Update Bootstrap 4 Beta 2 to commit which fixes jQuery conflict
@@ -173,7 +173,7 @@
 
 
             - ** Release 0.6.4.1 August 17h 2017 **
-              - Hot fix release - Rebuild new Bootstrap 4 Beta navbar markup into 2kgDesign
+              - Hot fix release - Rebuild new Bootstrap 4 Beta navbar markup into twoKgDesign
 
 
             - ** Release 0.6.3 August 14h 2017 **
@@ -266,7 +266,7 @@
                 - Updating to Bootstrap 4 Alpha 6
                 - Fixing german translation issues
                 - Cleanup navbar code
-                - Cleanup 2kgDesign Sass file
+                - Cleanup twoKgDesign Sass file
                 - Fixing browsersync issues
                 - Removing one page vertical template
                 - Update dependencies

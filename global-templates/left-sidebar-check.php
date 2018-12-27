@@ -2,7 +2,7 @@
 /**
  * Left sidebar check.
  *
- * @package 2kgDesign
+ * @package twoKgDesign
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -11,7 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 
 <?php
-$sidebar_pos = get_theme_mod( '2kgDesign_sidebar_position' );
+$sidebar_pos = get_theme_mod( 'twoKgDesign_sidebar_position' );
 ?>
 
 <?php if ( 'left' === $sidebar_pos || 'both' === $sidebar_pos ) : ?>

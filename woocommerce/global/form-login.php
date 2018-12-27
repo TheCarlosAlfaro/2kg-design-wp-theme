@@ -32,11 +32,11 @@ if ( is_user_logged_in() ) {
 	<?php echo ( $message ) ? wpautop( wptexturize( $message ) ) : ''; // @codingStandardsIgnoreLine ?>
 
 	<p class="form-row form-row-first">
-		<label for="username"><?php esc_html_e( 'Username or email', '2kgDesign' ); ?>&nbsp;<span class="required">*</span></label>
+		<label for="username"><?php esc_html_e( 'Username or email', 'twoKgDesign' ); ?>&nbsp;<span class="required">*</span></label>
 		<input type="text" class="input-text form-control" name="username" id="username" autocomplete="username" />
 	</p>
 	<p class="form-row form-row-last">
-		<label for="password"><?php esc_html_e( 'Password', '2kgDesign' ); ?>&nbsp<span class="required">*</span></label>
+		<label for="password"><?php esc_html_e( 'Password', 'twoKgDesign' ); ?>&nbsp<span class="required">*</span></label>
 		<input class="input-text form-control" type="password" name="password" id="password" autocomplete="current-password" />
 	</p>
 	<div class="clear"></div>
@@ -45,14 +45,14 @@ if ( is_user_logged_in() ) {
 
 	<p class="form-row">
 		<?php wp_nonce_field( 'woocommerce-login', 'woocommerce-login-nonce' ); ?>
-		<button type="submit" class="btn btn-outline-primary" name="login" value="<?php esc_attr_e( 'Login', '2kgDesign' ); ?>"><?php esc_html_e( 'Login', '2kgDesign' ); ?></button>
+		<button type="submit" class="btn btn-outline-primary" name="login" value="<?php esc_attr_e( 'Login', 'twoKgDesign' ); ?>"><?php esc_html_e( 'Login', 'twoKgDesign' ); ?></button>
 		<input type="hidden" name="redirect" value="<?php echo esc_url( $redirect ) ?>" />
 		<label class="woocommerce-form__label woocommerce-form__label-for-checkbox inline">
-			<input class="woocommerce-form__input woocommerce-form__input-checkbox" name="rememberme" type="checkbox" id="rememberme" value="forever" /> <span><?php esc_html_e( 'Remember me', '2kgDesign' ); ?></span>
+			<input class="woocommerce-form__input woocommerce-form__input-checkbox" name="rememberme" type="checkbox" id="rememberme" value="forever" /> <span><?php esc_html_e( 'Remember me', 'twoKgDesign' ); ?></span>
 		</label>
 	</p>
 	<p class="lost_password">
-		<a href="<?php echo esc_url( wp_lostpassword_url() ); ?>"><?php esc_html_e( 'Lost your password?', '2kgDesign' ); ?></a>
+		<a href="<?php echo esc_url( wp_lostpassword_url() ); ?>"><?php esc_html_e( 'Lost your password?', 'twoKgDesign' ); ?></a>
 	</p>
 
 	<div class="clear"></div>

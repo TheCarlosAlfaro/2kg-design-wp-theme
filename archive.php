@@ -4,7 +4,7 @@
  *
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
- * @package 2kgDesign
+ * @package twoKgDesign
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -15,7 +15,7 @@ get_header();
 ?>
 
 <?php
-$container   = get_theme_mod( '2kgDesign_container_type' );
+$container   = get_theme_mod( 'twoKgDesign_container_type' );
 ?>
 
 <div class="wrapper" id="archive-wrapper">
@@ -62,7 +62,7 @@ $container   = get_theme_mod( '2kgDesign_container_type' );
 			</main><!-- #main -->
 
 			<!-- The pagination component -->
-			<?php 2kgDesign_pagination(); ?>
+			<?php twoKgDesign_pagination(); ?>
 
 		<!-- Do the right sidebar check -->
 		<?php get_template_part( 'global-templates/right-sidebar-check' ); ?>

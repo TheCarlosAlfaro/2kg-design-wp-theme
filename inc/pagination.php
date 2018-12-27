@@ -2,25 +2,25 @@
 /**
  * Pagination layout.
  *
- * @package 2kgDesign
+ * @package twoKgDesign
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-if ( ! function_exists ( '2kgDesign_pagination' ) ) {
+if ( ! function_exists ( 'twoKgDesign_pagination' ) ) {
 
-	function 2kgDesign_pagination( $args = array(), $class = 'pagination' ) {
+	function twoKgDesign_pagination( $args = array(), $class = 'pagination' ) {
 
         if ($GLOBALS['wp_query']->max_num_pages <= 1) return;
 
 		$args = wp_parse_args( $args, array(
 			'mid_size'           => 2,
 			'prev_next'          => true,
-			'prev_text'          => __('&laquo;', '2kgDesign'),
-			'next_text'          => __('&raquo;', '2kgDesign'),
-			'screen_reader_text' => __('Posts navigation', '2kgDesign'),
+			'prev_text'          => __('&laquo;', 'twoKgDesign'),
+			'next_text'          => __('&raquo;', 'twoKgDesign'),
+			'screen_reader_text' => __('Posts navigation', 'twoKgDesign'),
 			'type'               => 'array',
 			'current'            => max( 1, get_query_var('paged') ),
 		) );

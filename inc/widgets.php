@@ -2,7 +2,7 @@
 /**
  * Declaring widgets
  *
- * @package 2kgDesign
+ * @package twoKgDesign
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -15,9 +15,9 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @link https://developer.wordpress.org/reference/hooks/dynamic_sidebar_params/
  */
-add_filter( 'dynamic_sidebar_params', '2kgDesign_widget_classes' );
+add_filter( 'dynamic_sidebar_params', 'twoKgDesign_widget_classes' );
 
-if ( ! function_exists( '2kgDesign_widget_classes' ) ) {
+if ( ! function_exists( 'twoKgDesign_widget_classes' ) ) {
 	/**
 	 * Count number of visible widgets in a sidebar and add classes to widgets accordingly,
 	 * so widgets can be displayed one, two, three or four per row.
@@ -47,7 +47,7 @@ if ( ! function_exists( '2kgDesign_widget_classes' ) ) {
 	 * }
 	 * @return array $params
 	 */
-	function 2kgDesign_widget_classes( $params ) {
+	function twoKgDesign_widget_classes( $params ) {
 
 		global $sidebars_widgets;
 
@@ -87,20 +87,20 @@ if ( ! function_exists( '2kgDesign_widget_classes' ) ) {
 		return $params;
 
 	}
-} // endif function_exists( '2kgDesign_widget_classes' ).
+} // endif function_exists( 'twoKgDesign_widget_classes' ).
 
-add_action( 'widgets_init', '2kgDesign_widgets_init' );
+add_action( 'widgets_init', 'twoKgDesign_widgets_init' );
 
-if ( ! function_exists( '2kgDesign_widgets_init' ) ) {
+if ( ! function_exists( 'twoKgDesign_widgets_init' ) ) {
 	/**
 	 * Initializes themes widgets.
 	 */
-	function 2kgDesign_widgets_init() {
+	function twoKgDesign_widgets_init() {
 		register_sidebar(
 			array(
-				'name'          => __( 'Right Sidebar', '2kgDesign' ),
+				'name'          => __( 'Right Sidebar', 'twoKgDesign' ),
 				'id'            => 'right-sidebar',
-				'description'   => __( 'Right sidebar widget area', '2kgDesign' ),
+				'description'   => __( 'Right sidebar widget area', 'twoKgDesign' ),
 				'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 				'after_widget'  => '</aside>',
 				'before_title'  => '<h3 class="widget-title">',
@@ -110,9 +110,9 @@ if ( ! function_exists( '2kgDesign_widgets_init' ) ) {
 
 		register_sidebar(
 			array(
-				'name'          => __( 'Left Sidebar', '2kgDesign' ),
+				'name'          => __( 'Left Sidebar', 'twoKgDesign' ),
 				'id'            => 'left-sidebar',
-				'description'   => __( 'Left sidebar widget area', '2kgDesign' ),
+				'description'   => __( 'Left sidebar widget area', 'twoKgDesign' ),
 				'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 				'after_widget'  => '</aside>',
 				'before_title'  => '<h3 class="widget-title">',
@@ -122,9 +122,9 @@ if ( ! function_exists( '2kgDesign_widgets_init' ) ) {
 
 		register_sidebar(
 			array(
-				'name'          => __( 'Hero Slider', '2kgDesign' ),
+				'name'          => __( 'Hero Slider', 'twoKgDesign' ),
 				'id'            => 'hero',
-				'description'   => __( 'Hero slider area. Place two or more widgets here and they will slide!', '2kgDesign' ),
+				'description'   => __( 'Hero slider area. Place two or more widgets here and they will slide!', 'twoKgDesign' ),
 				'before_widget' => '<div class="carousel-item">',
 				'after_widget'  => '</div>',
 				'before_title'  => '',
@@ -134,9 +134,9 @@ if ( ! function_exists( '2kgDesign_widgets_init' ) ) {
 
 		register_sidebar(
 			array(
-				'name'          => __( 'Hero Canvas', '2kgDesign' ),
+				'name'          => __( 'Hero Canvas', 'twoKgDesign' ),
 				'id'            => 'herocanvas',
-				'description'   => __( 'Full size canvas hero area for Bootstrap and other custom HTML markup', '2kgDesign' ),
+				'description'   => __( 'Full size canvas hero area for Bootstrap and other custom HTML markup', 'twoKgDesign' ),
 				'before_widget' => '',
 				'after_widget'  => '',
 				'before_title'  => '',
@@ -146,9 +146,9 @@ if ( ! function_exists( '2kgDesign_widgets_init' ) ) {
 
 		register_sidebar(
 			array(
-				'name'          => __( 'Top Full', '2kgDesign' ),
+				'name'          => __( 'Top Full', 'twoKgDesign' ),
 				'id'            => 'statichero',
-				'description'   => __( 'Full top widget with dynamic grid', '2kgDesign' ),
+				'description'   => __( 'Full top widget with dynamic grid', 'twoKgDesign' ),
 				'before_widget' => '<div id="%1$s" class="footer-widget %2$s dynamic-classes">',
 				'after_widget'  => '</div><!-- .static-hero-widget -->',
 				'before_title'  => '<h3 class="widget-title">',
@@ -158,9 +158,9 @@ if ( ! function_exists( '2kgDesign_widgets_init' ) ) {
 
 		register_sidebar(
 			array(
-				'name'          => __( 'Footer Full', '2kgDesign' ),
+				'name'          => __( 'Footer Full', 'twoKgDesign' ),
 				'id'            => 'footerfull',
-				'description'   => __( 'Full sized footer widget with dynamic grid', '2kgDesign' ),
+				'description'   => __( 'Full sized footer widget with dynamic grid', 'twoKgDesign' ),
 				'before_widget' => '<div id="%1$s" class="footer-widget %2$s dynamic-classes">',
 				'after_widget'  => '</div><!-- .footer-widget -->',
 				'before_title'  => '<h3 class="widget-title">',
@@ -169,4 +169,4 @@ if ( ! function_exists( '2kgDesign_widgets_init' ) ) {
 		);
 
 	}
-} // endif function_exists( '2kgDesign_widgets_init' ).
+} // endif function_exists( 'twoKgDesign_widgets_init' ).

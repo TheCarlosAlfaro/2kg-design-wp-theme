@@ -3,7 +3,7 @@
 /**
  * Post rendering content for blog page.
  *
- * @package 2kgDesign
+ * @package twoKgDesign
  */
 
 if (!defined('ABSPATH')) {

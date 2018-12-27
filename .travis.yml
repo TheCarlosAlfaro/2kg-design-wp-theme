@@ -1,8 +1,8 @@
 # Travis CI configuration file.
 # @link https://travis-ci.org/
 
-# For use with the 2kgDesign WordPress theme
-# @link https://github.com/holger1411/2kgDesign
+# For use with the twoKgDesign WordPress theme
+# @link https://github.com/holger1411/twoKgDesign
 
 # Declare project language and PHP versions to test against.
 # @link http://about.travis-ci.org/docs/user/languages/php/

@@ -1,8 +1,8 @@
 <?php
 /**
- * 2kgDesign modify editor
+ * twoKgDesign modify editor
  *
- * @package 2kgDesign
+ * @package twoKgDesign
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -13,19 +13,19 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Registers an editor stylesheet for the theme.
  */
 
-add_action( 'admin_init', '2kgDesign_wpdocs_theme_add_editor_styles' );
+add_action( 'admin_init', 'twoKgDesign_wpdocs_theme_add_editor_styles' );
 
-if ( ! function_exists ( '2kgDesign_wpdocs_theme_add_editor_styles' ) ) {
-  function 2kgDesign_wpdocs_theme_add_editor_styles() {
+if ( ! function_exists ( 'twoKgDesign_wpdocs_theme_add_editor_styles' ) ) {
+  function twoKgDesign_wpdocs_theme_add_editor_styles() {
     add_editor_style( 'css/custom-editor-style.min.css' );
   }
 }
 
 // Add TinyMCE style formats.
-add_filter( 'mce_buttons_2', '2kgDesign_tiny_mce_style_formats' );
+add_filter( 'mce_buttons_2', 'twoKgDesign_tiny_mce_style_formats' );
 
-if ( ! function_exists ( '2kgDesign_tiny_mce_style_formats' ) ) {
-  function 2kgDesign_tiny_mce_style_formats( $styles ) {
+if ( ! function_exists ( 'twoKgDesign_tiny_mce_style_formats' ) ) {
+  function twoKgDesign_tiny_mce_style_formats( $styles ) {
 
       array_unshift( $styles, 'styleselect' );
       return $styles;
@@ -33,10 +33,10 @@ if ( ! function_exists ( '2kgDesign_tiny_mce_style_formats' ) ) {
 }
 
 
-add_filter( 'tiny_mce_before_init', '2kgDesign_tiny_mce_before_init' );
+add_filter( 'tiny_mce_before_init', 'twoKgDesign_tiny_mce_before_init' );
 
-if ( ! function_exists ( '2kgDesign_tiny_mce_before_init' ) ) {
-  function 2kgDesign_tiny_mce_before_init( $settings ) {
+if ( ! function_exists ( 'twoKgDesign_tiny_mce_before_init' ) ) {
+  function twoKgDesign_tiny_mce_before_init( $settings ) {
 
     $style_formats = array(
         array(

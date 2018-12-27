@@ -2,7 +2,7 @@
 /**
  * The sidebar containing the main widget area.
  *
- * @package 2kgDesign
+ * @package twoKgDesign
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -14,7 +14,7 @@ if ( ! is_active_sidebar( 'left-sidebar' ) ) {
 }
 
 // when both sidebars turned on reduce col size to 3 from 4.
-$sidebar_pos = get_theme_mod( '2kgDesign_sidebar_position' );
+$sidebar_pos = get_theme_mod( 'twoKgDesign_sidebar_position' );
 ?>
 
 <?php if ( 'both' === $sidebar_pos ) : ?>

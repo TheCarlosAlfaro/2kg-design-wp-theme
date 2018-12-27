@@ -2,7 +2,7 @@
 /**
  * The sidebar containing the main widget area.
  *
- * @package 2kgDesign
+ * @package twoKgDesign
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
