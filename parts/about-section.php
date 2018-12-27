@@ -15,7 +15,7 @@ if (!defined('ABSPATH')) {
 
 <section id="about-section" class="py-5">
   <div class="container h-100">
-    <h3 class="text-center mb-5 display-4 text-light">ABOUT</h3>
+    <h3 class="text-center mb-5 display-4 text-light">WELCOME</h3>
     <div class="row align-items-center h-100">
       <div class="col-sm mx-auto text-light">
   
