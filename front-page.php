@@ -18,10 +18,13 @@ $container = get_theme_mod( 'twoKgDesign_container_type' );
   <?php get_template_part( 'global-templates/jumbotron' ); ?>
 
   <!-- About Section -->
-  <?php get_template_part( 'parts/about-section' ); ?>
+  <?php get_template_part( 'parts/welcome-section' ); ?>
+
+  <!-- Services Section -->
+  <?php get_template_part( 'parts/services-section' ); ?>
 
   <!-- Team Section -->
-  <?php get_template_part( 'parts/team-section' ); ?>
+  <?php //get_template_part( 'parts/team-section' ); ?>
 
   <!-- Blog Section -->
   <?php get_template_part( 'parts/blog-section' ); ?>

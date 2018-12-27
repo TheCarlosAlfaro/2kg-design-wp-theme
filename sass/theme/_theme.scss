@@ -45,7 +45,7 @@ body.admin-bar nav {
 }
 
 .jumbotron {
-  height: 80vh;
+  height: 88vh;
   background-color: $grid-dark-bg-color;
   background-image: url('http://2kg-design.local/wp-content/uploads/2018/12/hero-background.jpg');
   background-repeat: no-repeat;
@@ -64,7 +64,6 @@ body.admin-bar nav {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-
 
 .hero-content > p > a:hover {
   text-decoration: none;
@@ -182,19 +181,43 @@ body.admin-bar nav {
   background: $primary;
 }
 
-// about-section
-#about-section {
+// welcome-section
+#welcome-section {
   // background: $secondary;
-  background: $dark-section;
+  background: $light-section;
+}
+
+.heading__underline {
+  background: $primary;
+  border: none;
+  height: 2px;
+  margin: 0 auto 0 auto;
+  outline: none;
+  width: 100px;
 }
 
 .blockquote-footer {
   font-size: 1.2rem;
 }
 
-.about__image {
+.welcome__image {
   width: 100%;
 }
+
+// SERVICES SECTION
+.services__tile-1 {
+  background: red;
+}
+.services__tile-2 {
+  background: blue;
+}
+.services__tile-3 {
+  background: green;
+}
+.services__tile-4 {
+  background: yellow;
+}
+
 
 // TEAM SECTION
 #team-section {
@@ -382,7 +405,7 @@ body.admin-bar nav {
   .hero__services span {
     display: inline;
   }
-  .about-text {
+  .welcome-text {
     font-size: 1.1rem;
   }
   .hero-content h1 {
@@ -390,18 +413,16 @@ body.admin-bar nav {
     margin-bottom: 1rem;
   }
   .hero__services span {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
 }
-
-
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   .heading-logo {
     max-width: 70%;
   }
-  .about-text {
+  .welcome-text {
     font-size: 1.8rem;
   }
   .hero-content h1 {
@@ -411,7 +432,12 @@ body.admin-bar nav {
   .hero__services span {
     font-size: 1.1rem;
   }
- 
+  .jumbotron {
+    height: 84vh;
+  }
+  .welcome__content {
+    width: 60%;
+  }
 }
 
 // Large devices (desktops, 992px and up)
@@ -419,10 +445,10 @@ body.admin-bar nav {
   .heading-logo {
     max-width: 60%;
   }
-  .about-text {
+  .welcome-text {
     font-size: 2.2rem;
   }
-  .about__image {
+  .welcome__image {
     width: 80%;
   }
   .hero-content h1 {
@@ -432,6 +458,9 @@ body.admin-bar nav {
   .hero__services span {
     font-size: 1.2rem;
   }
+  .jumbotron {
+    height: 80vh;
+  }
 }
 
 // Extra large devices (large desktops, 1200px and up)
@@ -439,7 +468,7 @@ body.admin-bar nav {
   .heading-logo {
     max-width: 50%;
   }
-  .about-text {
+  .welcome-text {
     font-size: 2.7rem;
   }
   .hero-content h1 {
@@ -448,5 +477,8 @@ body.admin-bar nav {
   }
   .hero__services span {
     font-size: 1.2rem;
+  }
+  .jumbotron {
+    height: 80vh;
   }
 }
