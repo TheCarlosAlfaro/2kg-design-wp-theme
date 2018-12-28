@@ -207,15 +207,53 @@ body.admin-bar nav {
 // SERVICES SECTION
 .services__tile-1 {
   background: red;
+  padding: 0;
 }
 .services__tile-2 {
   background: blue;
+  padding: 0;
 }
 .services__tile-3 {
   background: green;
+  padding: 0;
 }
 .services__tile-4 {
   background: yellow;
+  padding: 0;
+}
+
+.text-overlay__container {
+  position: relative;
+}
+
+.text-overlay__overlay {
+  position: absolute;
+  transition: all .3s ease;
+  opacity: 1;
+  background-color: rgba($primary, 0.8);
+  // border-radius: 5px;
+}
+
+.overlayLeft {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.text-overlay__text {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.text-overlay__image {
+  display: block;
+  // border-radius: 5px;
 }
 
 
