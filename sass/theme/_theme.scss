@@ -224,8 +224,6 @@ body.admin-bar nav {
 .overflow-hidden { overflow: hidden; }
 
 .services__tile {
-  // background: red;
-  // padding: 15px 10px;
   margin: 0;
 }
 
@@ -241,6 +239,11 @@ body.admin-bar nav {
   opacity: 1;
   background-color: rgba($primary, 0.8);
   border-radius: .25rem;
+}
+
+.text-overlay__overlay:hover {
+  background-color: rgba($secondary, 0.6);
+  cursor: pointer;
 }
 
 .overlayLeft {
@@ -260,11 +263,11 @@ body.admin-bar nav {
   font-weight: bold;
 }
 
+
 .text-overlay__image {
   display: block;
   border-radius: .25rem;
 }
-
 
 
 
