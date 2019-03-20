@@ -15,7 +15,7 @@ if (!defined('ABSPATH')) {
 
 <section id="welcome-section" class="py-5">
   <div class="container text-center">
-    <h3 class="display-4">WELCOME</h3>
+    <h3 class="display-4">WHO WE ARE</h3>
     <hr class="heading__underline mb-5">
     <div class="row d-flex justify-content-center">
       <div class="welcome__content">

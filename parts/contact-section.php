@@ -20,7 +20,7 @@ if (!defined('ABSPATH')) {
 
       <div class="col-md mx-auto contact__left-side">
         <div class="container pt-5">
-          <h3 class="text-center display-4">GET IN TOUCH</h3>
+          <h3 class="text-center display-4">LET'S CONNECT</h3>
           <div class="text-center">
             <p class="footer__text--heading">Hours 9:00 AM - 8:00 PM</p>
 

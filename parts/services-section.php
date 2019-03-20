@@ -14,12 +14,12 @@ if (!defined('ABSPATH')) {
 <!-- services-section -->
 
 <section id="services-section">
-  <h3 class="display-4 text-center">OUR SERVICES</h3>
+  <h3 class="display-4 text-center">WHAT WE DO</h3>
   <hr class="heading__underline mb-5">
 
   <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
     <div class="mr-md-3 text-overlay__container">
-      <img src="http://staging.2kgdesign.com/wp-content/uploads/2018/12/branding.jpg" alt=""
+      <img src="http://2kg-design.local/wp-content/uploads/2019/03/branding-img.jpg" alt=""
         class="img-res shadow text-overlay__image">
       <div class="mr-md-3 text-center text-white overflow-hidden">
 
@@ -28,7 +28,8 @@ if (!defined('ABSPATH')) {
             <i class="fa fa-eye fa-3x"></i>
             <br>
             <p class="h3">Branding</p>
-            <a href="#contact-section" class="btn btn-light mb-3 shadow-none">Learn More</a>
+            <a href="<?php echo esc_url(home_url('/')); ?>branding" class="btn btn-light mb-3 shadow-none">Learn
+              More</a>
           </div>
         </div>
 

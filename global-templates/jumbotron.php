@@ -14,8 +14,7 @@ if (!defined('ABSPATH')) {
 <!-- Hero Section -->
 <section id="hero-section">
 
-  <div class="jumbotron jumbotron-fluid"
-    style="height: 88vh;
+  <div class="jumbotron jumbotron-fluid" style="height: 88vh;
   background-image: url('<?php the_field('hero_image') ?>'); 
     background-repeat: no-repeat;
     background-attachment: fixed; 
@@ -36,10 +35,20 @@ if (!defined('ABSPATH')) {
       <p>
         <a class="hero__services" href="#">
           <span>BRANDING.</span>
+        </a>
+
+        <a class="hero__services" href="#">
           <span>DIGITAL MARKETING.</span>
+        </a>
+
+        <a class="hero__services" href="#">
           <span>VIDEO.</span>
+        </a>
+
+        <a class="hero__services" href="#">
           <span>WEB DESIGN.</span>
         </a>
+
       </p>
 
       <!-- Button trigger modal -->
